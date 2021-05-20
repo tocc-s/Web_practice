@@ -1,0 +1,31 @@
+/* base */
+li {
+  list-style: none;
+}
+
+/* header */
+.header-container {
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .site-title {
+    width: 120px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      margin-left: 30px;
+      font-weight: bold;
+    }
+  }
+}
