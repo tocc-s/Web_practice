@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="wrapper">
     <div class="header-container">
       <div class="site-title">
         <a href="index.html">
@@ -21,8 +21,12 @@
 
       <nav>
         <ul>
-          <li>About</li>
-          <li>Bicycle</li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#bicycle">Bicycle</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -33,18 +37,24 @@
       <img src="./img/mainvisual.jpg" alt="テキストテキストテキスト">
     </div>
 
-    <section id="about">
-      <h2>About</h2>
-      <div class="profile">
+    <section id="about" class="wrapper">
+      <h2 class="section-title">About</h2>
+      <div class="about-content">
         <img src="./img/about.jpg">
-        <h3>KAKERU MIYAICHI</h3>
-        <p>テキスト</p>
+        <div class="about-text">
+          <h3>KAKERU MIYAICHI</h3>
+          <p>
+            テキストテキストテキストテキストテキストテキスト<br>
+            テキストテキストテキストテキストテキストテキスト<br>
+            テキストテキストテキストテキストテキストテキスト
+          </p>
+        </div>
       </div>
     </section>
 
-    <section id="bicycle">
-      <h2>Bicycle</h2>
-      <div class="bicycle">
+    <section id="bicycle" class="wrapper">
+      <h2 class="section-title">Bicycle</h2>
+      <div class="bicycle-content">
         <ul>
           <li>
             <img src="./img/bicycle1.jpg" alt="">
@@ -67,7 +77,9 @@
   </main>
 
   <footer>
-    <p>&copy; 2020 Profile</p>
+    <div class="footer-container">
+      <p>&copy; 2020 Profile</p>
+    </div>
   </footer>
 </body>
 
