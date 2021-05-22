@@ -1,10 +1,11 @@
+@charset "UTF-8";
 /* Common */
 html {
   font-size: 100%;
 }
 
 body {
-  margin-top: 60px auto;
+  color: #333;
   font-size: 0.875rem;
   background-color: #f4f9ff;
 }
@@ -15,7 +16,8 @@ body {
 }
 
 .inner {
-  margin: 0 200px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .section-title {
@@ -31,16 +33,17 @@ img {
 /* Header */
 header {
   margin-top: 60px;
-  padding: 0 10px;
 }
 
 header .site-title {
   max-width: 160px;
+  margin-bottom: 15px;
+  line-height: 1px;
 }
 
 header .site-title a {
+  /* aタグのリンク範囲を親要素(site-title)のサイズに広げる */
   display: block;
-  line-height: 1px;
 }
 
 /* Main */
@@ -51,14 +54,12 @@ main {
 }
 
 main #mainvisual {
-  display: block;
-  margin: 20px 0 60px 0;
-  padding: 0 10px;
+  margin-bottom: 60px;
 }
 
 main #index {
   margin-bottom: 60px;
-  padding: 30px 0;
+  padding: 30px 0 10px 0;
   background-color: #ffffff;
   text-align: left;
 }
@@ -90,7 +91,40 @@ main #detail .content img {
 }
 
 main #detail .content .content-title {
+  margin-bottom: 20px;
   font-size: 1.125rem;
   font-weight: bold;
+}
+
+main #detail .content dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 16px 0;
+  border-top: solid 1px #dedede;
+  border-bottom: solid 1px #dedede;
+  margin-bottom: 25px;
+}
+
+main #detail .content dl dt {
+  width: 25%;
+}
+
+main #detail .content dl dd {
+  width: 75%;
+}
+
+main #detail .content .content-text {
+  margin-bottom: 20px;
+}
+
+footer {
+  font-size: 0.625rem;
+}
+
+footer .inner {
+  margin: 15px 200px;
 }
 /*# sourceMappingURL=stylesheet.css.map */
