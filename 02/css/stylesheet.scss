@@ -1,4 +1,5 @@
 /* Common */
+/* #region Common */
 @charset "utf-8";
 
 html {
@@ -25,7 +26,9 @@ body {
 img {
   max-width: 100%;
 }
+/* #endregion Common */
 
+/* #region PC */
 /* Header */
 header {
   margin-top: 60px;
@@ -102,13 +105,48 @@ main {
       .content-text {
         margin-bottom: 20px;
       }
+      .link {
+        color: #333;
+      }
+      .link:hover {
+        opacity: 0.7;
+      }
     }
   }
 }
 
 footer {
   font-size: 0.625rem;
+  padding: 15px 0;
+}
+/* #endregion PC */
+
+/* #region SP */
+@media screen and (max-width: 1024px) {
+  /* Common */
   .inner {
-    margin: 15px 200px;
+    padding: 0 40px;
+  }
+  /* Header */
+  header {
+    padding: 0 10px;
+  }
+
+  /* Main */
+  main {
+    #mainvisual {
+      padding: 0 10px;
+    }
+
+    #detail {
+      .content {
+        flex-direction: column;
+
+        img {
+          width: 100%;
+          margin: 0 0 25px 0;
+        }
+      }
+    }
   }
 }
