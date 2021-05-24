@@ -5,6 +5,7 @@ html {
 }
 
 body {
+  color: #333;
   font-size: 0.875rem;
 }
 
@@ -138,5 +139,68 @@ main #detail .detail-inner .detail-text {
   padding-left: 40px;
 }
 
+main #detail .detail-inner .detail-text p {
+  margin-bottom: 20px;
+}
+
+main #detail .detail-inner .detail-text a {
+  color: #333333;
+}
+
+footer {
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.625rem;
+}
+
 /* #endregion PC */
+/* #region SP */
+@media screen and (max-width: 1024px) {
+  .inner {
+    padding: 0 20px;
+  }
+  header {
+    padding: 0 10px;
+  }
+  main #index {
+    padding: 40px 20px;
+  }
+  main #photo ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #photo ul li {
+    width: 600px;
+  }
+  main #detail {
+    padding: 40px 20px;
+  }
+  main #detail .detail-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #detail .detail-inner dl {
+    width: 100%;
+    padding: 0 0 40px 0;
+    border-right: 0;
+    border-bottom: solid 1px;
+  }
+  main #detail .detail-inner .detail-text {
+    width: 100%;
+    padding: 40px 0 0 0;
+  }
+}
+
+/* #endregion SP */
 /*# sourceMappingURL=stylesheet.css.map */
