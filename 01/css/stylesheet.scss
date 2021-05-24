@@ -34,6 +34,7 @@ img {
 }
 .content-title {
   margin: 10px 0;
+  font-size: 1rem;
 }
 /* #endregion Common */
 
@@ -159,16 +160,16 @@ img {
       }
     }
   }
-}
 
-#bicycle {
-  ul {
-    flex-direction: column;
+  #bicycle {
+    ul {
+      flex-direction: column;
 
-    li {
-      width: 100%;
-      margin-bottom: 30px;
+      li {
+        width: 100%;
+        margin-bottom: 30px;
+      }
     }
   }
 }
-/* #endregion Common */
+/* #endregion SP */

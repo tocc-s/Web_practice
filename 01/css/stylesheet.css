@@ -39,6 +39,7 @@ img {
 
 .content-title {
   margin: 10px 0;
+  font-size: 1rem;
 }
 
 /* #endregion Common */
@@ -182,19 +183,17 @@ img {
   #about .about-content .about-text .content-title {
     text-align: center;
   }
+  #bicycle ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #bicycle ul li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
-#bicycle ul {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#bicycle ul li {
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-/* #endregion Common */
+/* #endregion SP */
 /*# sourceMappingURL=stylesheet.css.map */
