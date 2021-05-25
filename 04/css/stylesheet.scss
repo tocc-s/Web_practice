@@ -47,7 +47,6 @@ main {
 
     .list-container {
       display: flex;
-      // justify-content: flex-start;
 
       li {
         width: calc(100% / 3);
@@ -103,6 +102,18 @@ footer {
 
 /* #region SP */
 @media screen and (max-width: 834px) {
-  
+  /* Main */
+  main {
+    /* Image */
+    .image-container {
+      .list-container {
+        flex-direction: column;
+
+        li {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 /* #endregion SP */
