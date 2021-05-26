@@ -1,0 +1,151 @@
+/* #region Common */
+/* Common */
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #2d2d2d;
+  font-family: "Crimson Text", serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  margin-bottom: 60px;
+}
+
+.container {
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+/* #endregion Common */
+/* #region PC */
+main .wrapper {
+  margin: 0 60px;
+  /* Main visual */
+}
+
+main .wrapper #mainvisual {
+  margin-top: 50px;
+}
+
+main .wrapper #mainvisual img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+main .wrapper .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  padding: 32px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .wrapper .nav-container .site-title {
+  width: 110px;
+  line-height: 0;
+  margin-right: 50px;
+}
+
+main .wrapper .nav-container .site-title a {
+  display: block;
+}
+
+main .wrapper .nav-container .site-title a img {
+  vertical-align: bottom;
+}
+
+main .wrapper .nav-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+main .wrapper .nav-container ul li {
+  margin-right: 30px;
+  font-size: 0.875rem;
+}
+
+main .wrapper .nav-container ul li a {
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+main .wrapper #concept {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1000px;
+  padding: 0 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .wrapper #concept img {
+  width: 50%;
+  vertical-align: bottom;
+}
+
+main .wrapper #concept .text-container {
+  width: 50%;
+  padding: 0 7%;
+}
+
+main .wrapper #concept .text-container h2 {
+  margin-bottom: 4px;
+}
+
+main .wrapper #concept .text-container span {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+main .wrapper #work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1000px;
+  padding: 0 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .wrapper #work img {
+  width: 50%;
+  vertical-align: bottom;
+}
+
+main .wrapper #work .text-container {
+  width: 50%;
+  padding: 0 7%;
+}
+
+main .wrapper #work .text-container h2 {
+  margin-bottom: 4px;
+}
+
+main .wrapper #work .text-container span {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+/* #endregion PC */
+/* #region SP */
+/* #endregion SP */
+/*# sourceMappingURL=stylesheet.css.map */

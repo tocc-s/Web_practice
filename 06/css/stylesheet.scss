@@ -1,0 +1,133 @@
+/* #region Common */
+/* Common */
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #2d2d2d;
+  font-family: "Crimson Text", serif;
+}
+img {
+  max-width: 100%;
+}
+.wrapper {
+  margin-bottom: 60px;
+}
+.container {
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.section-title {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+/* #endregion Common */
+
+/* #region PC */
+main {
+  .wrapper {
+    margin: 0 60px;
+
+    /* Main visual */
+    #mainvisual {
+      margin-top: 50px;
+
+      img {
+        max-width: 100%;
+        vertical-align: bottom;
+      }
+    }
+
+    .nav-container {
+      display: flex;
+      margin-bottom: 30px;
+      padding: 32px 0;
+      align-items: center;
+
+      .site-title {
+        width: 110px;
+        line-height: 0;
+        margin-right: 50px;
+
+        a {
+          display: block;
+
+          img {
+            vertical-align: bottom;
+          }
+        }
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+
+        li {
+          margin-right: 30px;
+          font-size: 0.875rem;
+
+          a {
+            text-decoration: none;
+            color: #2d2d2d;
+          }
+        }
+      }
+    }
+
+    #concept {
+      display: flex;
+      max-width: 1000px;
+      padding: 0 18px;
+      align-items: center;
+
+      img {
+        width: 50%;
+        vertical-align: bottom;
+      }
+      .text-container {
+        width: 50%;
+        padding: 0 7%;
+
+        h2 {
+          margin-bottom: 4px;
+        }
+        span {
+          display: inline-block;
+          margin-bottom: 25px;
+        }
+      }
+    }
+
+    #work {
+      display: flex;
+      max-width: 1000px;
+      padding: 0 18px;
+      align-items: center;
+
+      img {
+        width: 50%;
+        vertical-align: bottom;
+      }
+      .text-container {
+        width: 50%;
+        padding: 0 7%;
+
+        h2 {
+          margin-bottom: 4px;
+        }
+        span {
+          display: inline-block;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
+/* #endregion PC */
+
+/* #region SP */
+@media screen and (max-width: 824px) {
+}
+/* #endregion SP */
