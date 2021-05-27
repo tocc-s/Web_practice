@@ -19,7 +19,6 @@ img {
   font-size: 1.5rem;
   font-weight: normal;
 }
-
 /* #endregion Common */
 
 /* #region PC */
@@ -145,6 +144,57 @@ main {
 /* #endregion PC */
 
 /* #region SP */
-@media screen and (max-width: 824px) {
+@media screen and (max-width: 767px) {
+  /* Common */
+  .section-title {
+    font-size: 1.25rem;
+  }
+  
+  /* Main */
+  main {
+    #mainvisual {
+      width: 100%;
+      margin: 0 auto;
+
+      img {
+        height: 50vh;
+        object-fit: cover;
+      }
+    }
+
+    .nav-container {
+      width: 100%;
+      padding: 20px 18px;
+    }
+
+    .wrapper {
+      #concept {
+        flex-direction: column;
+
+        img {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        .text-container {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      #work {
+        flex-direction: column-reverse;
+
+        .text-container {
+          width: 100%;
+          padding: 0;
+        }
+        img {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
 }
 /* #endregion SP */
