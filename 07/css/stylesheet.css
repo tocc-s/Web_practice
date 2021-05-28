@@ -209,5 +209,74 @@ footer p {
 
 /* #endregion PC */
 /* #region SP */
+@media screen and (max-width: 600px) {
+  .section-wrapper {
+    margin-bottom: 70px;
+  }
+  .section-title {
+    margin-bottom: 40px;
+  }
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 100%;
+    height: auto;
+  }
+  header .site-title {
+    margin-top: 20px;
+  }
+  header ul li {
+    margin-left: 20px;
+    font-size: 0.8rem;
+  }
+  header ul li:first-child {
+    margin-left: 0;
+  }
+  main #content {
+    margin-bottom: 70px;
+  }
+  main #content #works ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #content #works ul li {
+    width: 100%;
+  }
+  main #content #news dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #content #news dl dt {
+    width: 100%;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+  main #content #news dl dd {
+    width: 100%;
+    padding-top: 0;
+  }
+  main #content #contact dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #content #contact dl dt {
+    width: 100%;
+  }
+  main #content #contact dl dd {
+    width: 100%;
+  }
+}
+
 /* #endregion SP */
 /*# sourceMappingURL=stylesheet.css.map */
