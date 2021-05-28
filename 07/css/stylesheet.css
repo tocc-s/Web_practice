@@ -20,11 +20,13 @@ li {
 
 .section-wrapper {
   margin-bottom: 130px;
+  font-size: 0.9rem;
 }
 
 .section-title {
   margin-bottom: 65px;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 /* #endregion Common */
@@ -94,17 +96,115 @@ main #content #about ul {
   margin-bottom: 30px;
 }
 
-main #content #about ul li {
-  font-size: 0.9rem;
-}
-
 main #content #about ul li:first-child {
   margin-bottom: 30px;
 }
 
 main #content #about p {
   text-align: justify;
+}
+
+main #content #works ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+main #content #works ul li {
+  width: 31%;
+  margin-bottom: 23px;
+}
+
+main #content #works ul li img {
+  max-width: 100%;
+}
+
+main #content #news dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-size: 0.9rem;
+  border-top: solid 1px #c8c8c8;
+}
+
+main #content #news dl dt {
+  width: 20%;
+  padding: 15px;
+  border-bottom: solid 1px #c8c8c8;
+}
+
+main #content #news dl dd {
+  width: 80%;
+  padding: 15px;
+  border-bottom: solid 1px #c8c8c8;
+}
+
+main #content #contact dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+main #content #contact dl dt {
+  width: 15%;
+}
+
+main #content #contact dl dd {
+  width: 85%;
+  margin-bottom: 10px;
+}
+
+main #content #contact dl dd input {
+  width: 100%;
+  padding: 10px;
+  border: solid 1px #c8c8c8;
+}
+
+main #content #contact dl dd textarea {
+  width: 100%;
+  height: 10rem;
+  padding: 10px;
+  border: solid 1px #c8c8c8;
+}
+
+main #content #contact .btn {
+  text-align: center;
+}
+
+main #content #contact .btn input {
+  width: 200px;
+  padding: 15px 0;
+  border: solid 1px #24292e;
+  background-color: #24292e;
+  color: #fff;
+}
+
+main #content #contact .btn input:hover {
+  background-color: #fff;
+  color: #24292e;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #24292e;
+}
+
+footer p {
+  font-size: 0.5rem;
+  color: #fff;
 }
 
 /* #endregion PC */
