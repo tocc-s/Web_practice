@@ -1,0 +1,113 @@
+/* #region Common */
+/* Common */
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #24292e;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.section-wrapper {
+  margin-bottom: 130px;
+}
+
+.section-title {
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+/* #endregion Common */
+/* #region PC */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 270px;
+}
+
+header .site-title {
+  line-height: 0;
+}
+
+header .site-title a {
+  display: block;
+}
+
+header .site-title a img {
+  max-width: 100%;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+}
+
+header ul li {
+  margin-left: 30px;
+  font-size: 0.9rem;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #24292e;
+}
+
+header ul li .nav-icon img {
+  width: 20px;
+}
+
+main #mainvisual {
+  margin-bottom: 80px;
+}
+
+main #mainvisual img {
+  width: 100%;
+  height: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main #content {
+  margin: 0 auto 130px auto;
+}
+
+main #content #about ul {
+  margin-bottom: 30px;
+}
+
+main #content #about ul li {
+  font-size: 0.9rem;
+}
+
+main #content #about ul li:first-child {
+  margin-bottom: 30px;
+}
+
+main #content #about p {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+
+/* #endregion PC */
+/* #region SP */
+/* #endregion SP */
+/*# sourceMappingURL=stylesheet.css.map */
