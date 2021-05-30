@@ -190,5 +190,56 @@ footer .copy-right {
 
 /* #endregion PC */
 /* #region SP */
+@media screen and (max-width: 896px) {
+  main #magazine .img-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #magazine .img-container a {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  main #magazine .img-container a:last-child {
+    margin-bottom: 0;
+  }
+  main #fashion {
+    margin-bottom: 50px;
+    padding-top: 35px;
+  }
+  main .content .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  main .content .wrapper .item {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  main .content .wrapper .item:last-child {
+    margin-bottom: 0;
+  }
+  footer .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  footer .menu .item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  footer .menu .item:first-child {
+    padding: 0;
+    text-align: center;
+  }
+}
+
 /* #endregion SP */
 /*# sourceMappingURL=stylesheet.css.map */

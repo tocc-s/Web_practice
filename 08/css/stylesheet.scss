@@ -181,5 +181,58 @@ footer {
 
 /* #region SP */
 @media screen and (max-width: 896px) {
+  main {
+    #magazine {
+      .img-container {
+        flex-direction: column;
+
+        a {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+        a:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    #fashion {
+      margin-bottom: 50px;
+      padding-top: 35px;
+    }
+
+    .content {
+      .wrapper {
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .item {
+          width: 100%;
+          margin-bottom: 60px;
+        }
+        .item:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  footer {
+    .menu {
+      flex-direction: column;
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      .item {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      .item:first-child {
+        padding: 0;
+        text-align: center;
+      }
+    }
+  }
 }
 /* #endregion SP */
