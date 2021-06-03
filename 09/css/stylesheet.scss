@@ -195,5 +195,41 @@ footer {
 
 /* #region SP */
 @media screen and (max-width: 896px) {
+  header {
+    margin-bottom: 0;
+    padding: 36px 16px 16px 16px;
+    border-bottom: none;
+
+    .site-title {
+      margin-bottom: 26px;
+    }
+
+    nav {
+      // justify-content: center;
+      overflow-x: scroll;
+
+      .menu,
+      .login {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  main {
+    #content {
+      flex-direction: column;
+
+      .item-img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+      }
+      .item-info {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 16px;
+      }
+    }
+  }
 }
 /* #endregion SP */

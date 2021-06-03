@@ -208,5 +208,39 @@ footer p {
 
 /* #endregion PC */
 /* #region SP */
+@media screen and (max-width: 896px) {
+  header {
+    margin-bottom: 0;
+    padding: 36px 16px 16px 16px;
+    border-bottom: none;
+  }
+  header .site-title {
+    margin-bottom: 26px;
+  }
+  header nav {
+    overflow-x: scroll;
+  }
+  header nav .menu,
+  header nav .login {
+    margin: 0 auto;
+  }
+  main #content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #content .item-img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  main #content .item-info {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+  }
+}
+
 /* #endregion SP */
 /*# sourceMappingURL=stylesheet.css.map */
