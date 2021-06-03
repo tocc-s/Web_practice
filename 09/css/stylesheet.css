@@ -1,0 +1,212 @@
+/* #region Common */
+/* Common */
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #333;
+  font-size: 0.75rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* #endregion Common */
+/* #region PC */
+header {
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+  padding-top: 46px;
+  padding-bottom: 26px;
+  border-bottom: solid 1px #c3c3c3;
+}
+
+header h1 {
+  width: 109px;
+  margin: 0 auto 36px auto;
+  line-height: 0;
+}
+
+header h1 a {
+  display: block;
+}
+
+header h1 a img {
+  max-width: 100%;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-right: 14px;
+}
+
+header nav ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+header nav .login li {
+  margin-right: 0;
+  margin-left: 14px;
+}
+
+main #content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+main #content .item-img {
+  max-width: 400px;
+  margin-right: 60px;
+}
+
+main #content .item-img img {
+  width: 100%;
+}
+
+main #content .item-info {
+  max-width: 340px;
+}
+
+main #content .item-info .info-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  margin-bottom: 20px;
+  border-top: solid 1px #c3c3c3;
+  border-bottom: solid 1px #c3c3c3;
+  font-size: 1rem;
+}
+
+main #content .item-info p {
+  margin-bottom: 30px;
+  line-height: 1.9;
+}
+
+main #content .order-table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+main #content .order-table tr {
+  border-bottom: solid 1px #c3c3c3;
+}
+
+main #content .order-table tr th {
+  border-bottom: solid 1px #c3c3c3;
+}
+
+main #content .order-table tr th,
+main #content .order-table tr td {
+  padding: 10px;
+  text-align: center;
+  font-weight: normal;
+  border-right: solid 1px #c3c3c3;
+}
+
+main #content .order-table tr th:last-child,
+main #content .order-table tr td:last-child {
+  border-right: none;
+}
+
+main #content .order-table tr .color,
+main #content .order-table tr .size {
+  width: 20%;
+}
+
+main #content .order-table tr select {
+  width: 100%;
+  padding: 0 10px;
+  border: solid 1px #c3c3c3;
+  -webkit-appearance: menulist;
+}
+
+main #content .order-table tr:last-child {
+  border-bottom: none;
+}
+
+main #content .btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 18px 0;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  background-color: #4b4b4b;
+  text-decoration: none;
+}
+
+main #content .size-table {
+  width: 100%;
+  border: solid 1px #c3c3c3;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+main #content .size-table th {
+  background-color: #ecebeb;
+}
+
+main #content .size-table th,
+main #content .size-table td {
+  width: 28%;
+  padding: 10px;
+  font-weight: normal;
+  border-bottom: solid 1px #c3c3c3;
+  border-right: solid 1px #c3c3c3;
+}
+
+main #content .size-table th:first-child {
+  width: 16%;
+}
+
+main #content .size-table td:last-child {
+  border-right: none;
+}
+
+footer {
+  padding: 10px 0;
+}
+
+footer p {
+  font-size: 0.625rem;
+  text-align: center;
+}
+
+/* #endregion PC */
+/* #region SP */
+/* #endregion SP */
+/*# sourceMappingURL=stylesheet.css.map */
