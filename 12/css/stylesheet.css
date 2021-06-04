@@ -83,6 +83,7 @@ main #menu .menu-title {
 
 main #menu .menu-title .section-title {
   font-size: 4.5rem;
+  color: #ffffff;
   -webkit-filter: drop-shadow(1px 1px 10px #c0c0c0);
           filter: drop-shadow(1px 1px 10px #c0c0c0);
 }
@@ -92,11 +93,51 @@ main #menu .item-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
+  padding: 90px 16px 150px 16px;
   text-align: center;
 }
 
 main #menu .item-wrapper .item {
   width: 50%;
+  padding: 0 45px;
+}
+
+main #menu .item-wrapper .item .item-title {
+  display: inline-block;
+  margin-bottom: 70px;
+  font-size: 2.5rem;
+  border-bottom: solid 6px #e03131;
+}
+
+main #menu .item-wrapper .item dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+main #menu .item-wrapper .item dl dt {
+  width: 87%;
+  margin-bottom: 25px;
+  text-align: left;
+  border-bottom: dotted 1px #000;
+}
+
+main #menu .item-wrapper .item dl dd {
+  width: 13%;
+  padding-top: 8px;
+  text-align: right;
+}
+
+main #menu .item-wrapper .item .food {
+  margin-bottom: 55px;
+}
+
+main #menu .item-wrapper .item-coffee {
+  border-right: solid 1px #000;
 }
 
 /* #endregion PC */
