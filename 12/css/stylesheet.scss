@@ -2,9 +2,6 @@
 /* Common */
 @charset "UTF-8";
 
-$text-color: #ffffff;
-$bg-img: url("");
-
 html {
   font-size: 100%;
 }
@@ -14,6 +11,10 @@ body {
   font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
   line-height: 1.7;
 }
+
+$text-color: #ffffff;
+$bg-img: url("");
+
 @mixin bg-fixed($bg-img) {
   position: relative;
   display: flex;
@@ -24,6 +25,24 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+@mixin wrapper-style {
+  max-width: 1000px;
+  display: flex;
+  margin: 0 auto;
+  padding: 90px 16px 150px 16px;
+  text-align: center;
+}
+@mixin title-style {
+  font-size: 4.5rem;
+  color: $text-color;
+  filter: drop-shadow(1px 1px 10px #c0c0c0);
+}
+@mixin item-title-style {
+  display: inline-block;
+  margin-bottom: 70px;
+  font-size: 2.5rem;
+  border-bottom: solid 6px #e03131;
 }
 /* #endregion Common */
 
@@ -79,28 +98,19 @@ main {
       @include bg-fixed(url("../img/menu.jpg"));
 
       .section-title {
-        font-size: 4.5rem;
-        color: $text-color;
-        filter: drop-shadow(1px 1px 10px #c0c0c0);
+        @include title-style();
       }
     }
 
     .item-wrapper {
-      max-width: 1000px;
-      display: flex;
-      margin: 0 auto;
-      padding: 90px 16px 150px 16px;
-      text-align: center;
+      @include wrapper-style();
 
       .item {
         width: 50%;
         padding: 0 45px;
 
         .item-title {
-          display: inline-block;
-          margin-bottom: 70px;
-          font-size: 2.5rem;
-          border-bottom: solid 6px #e03131;
+          @include item-title-style();
         }
 
         dl {
@@ -126,6 +136,52 @@ main {
       }
       .item-coffee {
         border-right: solid 1px #000;
+      }
+    }
+  }
+
+  #about {
+    margin-top: 20px;
+
+    .about-title {
+      @include bg-fixed(url("../img/about.jpg"));
+
+      .section-title {
+        @include title-style();
+      }
+    }
+
+    .item-wrapper {
+      @include wrapper-style();
+
+      .item {
+        width: 100%;
+
+        .item-title {
+          @include item-title-style();
+        }
+
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-bottom: 40px;
+
+          li {
+            list-style: none;
+            width: 50%;
+            padding: 2%;
+            line-height: 2;
+            text-align: left;
+          }
+        }
+
+        .btn {
+          text-decoration: none;
+          span {
+            color: #000;
+          }
+        }
       }
     }
   }
