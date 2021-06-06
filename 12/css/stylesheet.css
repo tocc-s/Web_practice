@@ -10,6 +10,30 @@ body {
   line-height: 1.7;
 }
 
+.item-wrapper {
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 90px 16px 150px 16px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 4.5rem;
+  color: #ffffff;
+  -webkit-filter: drop-shadow(1px 1px 10px #c0c0c0);
+          filter: drop-shadow(1px 1px 10px #c0c0c0);
+}
+
+.item-title {
+  display: inline-block;
+  margin-bottom: 70px;
+  font-size: 2.5rem;
+  border-bottom: solid 6px #e03131;
+}
+
 /* #endregion Common */
 /* #region PC */
 header {
@@ -81,33 +105,9 @@ main #menu .menu-title {
   background-attachment: fixed;
 }
 
-main #menu .menu-title .section-title {
-  font-size: 4.5rem;
-  color: #ffffff;
-  -webkit-filter: drop-shadow(1px 1px 10px #c0c0c0);
-          filter: drop-shadow(1px 1px 10px #c0c0c0);
-}
-
-main #menu .item-wrapper {
-  max-width: 1000px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  padding: 90px 16px 150px 16px;
-  text-align: center;
-}
-
 main #menu .item-wrapper .item {
   width: 50%;
   padding: 0 45px;
-}
-
-main #menu .item-wrapper .item .item-title {
-  display: inline-block;
-  margin-bottom: 70px;
-  font-size: 2.5rem;
-  border-bottom: solid 6px #e03131;
 }
 
 main #menu .item-wrapper .item dl {
@@ -162,32 +162,8 @@ main #about .about-title {
   background-attachment: fixed;
 }
 
-main #about .about-title .section-title {
-  font-size: 4.5rem;
-  color: #ffffff;
-  -webkit-filter: drop-shadow(1px 1px 10px #c0c0c0);
-          filter: drop-shadow(1px 1px 10px #c0c0c0);
-}
-
-main #about .item-wrapper {
-  max-width: 1000px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  padding: 90px 16px 150px 16px;
-  text-align: center;
-}
-
 main #about .item-wrapper .item {
   width: 100%;
-}
-
-main #about .item-wrapper .item .item-title {
-  display: inline-block;
-  margin-bottom: 70px;
-  font-size: 2.5rem;
-  border-bottom: solid 6px #e03131;
 }
 
 main #about .item-wrapper .item ul {
@@ -248,32 +224,8 @@ main #location .location-title {
   background-attachment: fixed;
 }
 
-main #location .location-title .section-title {
-  font-size: 4.5rem;
-  color: #ffffff;
-  -webkit-filter: drop-shadow(1px 1px 10px #c0c0c0);
-          filter: drop-shadow(1px 1px 10px #c0c0c0);
-}
-
-main #location .item-wrapper {
-  max-width: 1000px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  padding: 90px 16px 150px 16px;
-  text-align: center;
-}
-
 main #location .item-wrapper .item {
   width: 100%;
-}
-
-main #location .item-wrapper .item .item-title {
-  display: inline-block;
-  margin-bottom: 70px;
-  font-size: 2.5rem;
-  border-bottom: solid 6px #e03131;
 }
 
 main #location .item-wrapper .item .item-map {
@@ -304,5 +256,59 @@ footer p {
 
 /* #endregion PC */
 /* #region SP */
+@media screen and (max-width: 767px) {
+  header {
+    margin-bottom: 10px;
+  }
+  header .site-title {
+    padding: 0 16px;
+    top: 42%;
+  }
+  main .item-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px 16px 60px 16px;
+  }
+  main .section-title {
+    font-size: 2rem;
+  }
+  main .item-title {
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+  }
+  main #menu .menu-title {
+    height: 94px;
+  }
+  main #menu .item-wrapper .item {
+    width: 100%;
+    padding: 0;
+    border-right: none;
+  }
+  main #menu .item-wrapper .item dl {
+    margin-bottom: 10px;
+  }
+  main #menu .item-wrapper .item .food {
+    margin-bottom: 10px;
+  }
+  main #menu .item-wrapper .item-coffee {
+    width: 100%;
+    border-right: none;
+  }
+  main #about .about-title {
+    height: 94px;
+  }
+  main #about .item-wrapper .item ul li {
+    width: 100%;
+  }
+  main #location .location-title {
+    height: 94px;
+  }
+}
+
 /* #endregion SP */
 /*# sourceMappingURL=stylesheet.css.map */

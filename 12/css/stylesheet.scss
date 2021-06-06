@@ -26,19 +26,19 @@ $bg-img: url("");
   background-position: center;
   background-attachment: fixed;
 }
-@mixin wrapper-style {
+.item-wrapper {
   max-width: 1000px;
   display: flex;
   margin: 0 auto;
   padding: 90px 16px 150px 16px;
   text-align: center;
 }
-@mixin title-style {
+.section-title {
   font-size: 4.5rem;
   color: $text-color;
   filter: drop-shadow(1px 1px 10px #c0c0c0);
 }
-@mixin item-title-style {
+.item-title {
   display: inline-block;
   margin-bottom: 70px;
   font-size: 2.5rem;
@@ -96,22 +96,12 @@ main {
 
     .menu-title {
       @include bg-fixed(url("../img/menu.jpg"));
-
-      .section-title {
-        @include title-style();
-      }
     }
 
     .item-wrapper {
-      @include wrapper-style();
-
       .item {
         width: 50%;
         padding: 0 45px;
-
-        .item-title {
-          @include item-title-style();
-        }
 
         dl {
           display: flex;
@@ -145,21 +135,11 @@ main {
 
     .about-title {
       @include bg-fixed(url("../img/about.jpg"));
-
-      .section-title {
-        @include title-style();
-      }
     }
 
     .item-wrapper {
-      @include wrapper-style();
-
       .item {
         width: 100%;
-
-        .item-title {
-          @include item-title-style();
-        }
 
         ul {
           display: flex;
@@ -200,21 +180,11 @@ main {
 
     .location-title {
       @include bg-fixed(url(../img/location.jpg));
-
-      .section-title {
-        @include title-style();
-      }
     }
 
     .item-wrapper {
-      @include wrapper-style();
-
       .item {
         width: 100%;
-
-        .item-title {
-          @include item-title-style();
-        }
 
         .item-map {
           margin-bottom: 20px;
@@ -240,7 +210,7 @@ main {
 
 footer {
   padding: 10px 0;
-  
+
   p {
     font-size: 0.5rem;
     text-align: center;
@@ -249,6 +219,76 @@ footer {
 /* #endregion PC */
 
 /* #region SP */
-@media screen and (max-width: 824px) {
+@media screen and (max-width: 767px) {
+  header {
+    margin-bottom: 10px;
+
+    .site-title {
+      padding: 0 16px;
+      top: 42%;
+    }
+  }
+
+  main {
+    .item-wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 16px 60px 16px;
+    }
+    .section-title {
+      font-size: 2rem;
+    }
+    .item-title {
+      font-size: 1.25rem;
+      margin-bottom: 25px;
+    }
+
+    #menu {
+      .menu-title {
+        height: 94px;
+      }
+
+      .item-wrapper {
+        .item {
+          width: 100%;
+          padding: 0;
+          border-right: none;
+
+          dl {
+            margin-bottom: 10px;
+          }
+          .food {
+            margin-bottom: 10px;
+          }
+        }
+        .item-coffee {
+          width: 100%;
+          border-right: none;
+        }
+      }
+    }
+
+    #about {
+      .about-title {
+        height: 94px;
+      }
+
+      .item-wrapper {
+        .item {
+          ul {
+            li {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    #location {
+      .location-title {
+        height: 94px;
+      }
+    }
+  }
 }
 /* #endregion SP */
