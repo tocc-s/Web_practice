@@ -15,8 +15,8 @@ header {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  margin-bottom: 80px;
-  padding: 20px;
+  margin-bottom: 180px;
+  padding: 60px 80px;
   background-image: url("../img/mainvisual-pc.jpg");
   background-position: center, top;
   background-repeat: none;
@@ -55,8 +55,8 @@ header nav ul li a {
 header .to-store {
   position: absolute;
   padding: 8px;
-  left: 20px;
-  bottom: 20px;
+  left: 40px;
+  bottom: 30px;
   background: rgba(255, 255, 255, 0.2);
 }
 
