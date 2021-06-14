@@ -1,0 +1,85 @@
+/* #region Common */
+/* Common */
+@charset "UTF-8";
+
+$text-color: #ffffff;
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #000;
+  font-family: "Noto Serif JP", serif;
+  // font-style: ;
+}
+/* #endregion Common */
+
+/* #region PC */
+header {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: 80px;
+  padding: 20px;
+  background-image: url("../img/mainvisual-pc.jpg");
+  background-position: center, top;
+  background-repeat: none;
+  writing-mode: vertical-rl;
+
+  .site-title {
+    margin-left: 60px;
+    line-height: 1px;
+
+    a {
+      display: block;
+
+      img {
+        width: 40px;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      display: block;
+
+      li {
+        margin-left: 25px;
+        list-style: none;
+
+        a {
+          color: $text-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .to-store {
+    position: absolute;
+    padding: 8px;
+    left: 20px;
+    bottom: 20px;
+    background: rgba(255, 255, 255, 0.2);
+
+    a {
+      display: block;
+      padding: 30px 18px;
+      text-decoration: none;
+      color: $text-color;
+      border: solid 1px #ccc;
+    }
+    a:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+main {
+}
+/* #endregion PC */
+
+/* #region SP */
+@media screen and (max-width: 824px) {
+}
+/* #endregion SP */
