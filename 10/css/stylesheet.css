@@ -6,7 +6,15 @@ html {
 
 body {
   color: #000;
+  background-color: #e6e2d7;
   font-family: "Noto Serif JP", serif;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* #endregion Common */
@@ -70,6 +78,219 @@ header .to-store a {
 
 header .to-store a:hover {
   opacity: 0.7;
+}
+
+main #news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-bottom: 180px;
+}
+
+main #news .section-title {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-weight: normal;
+  line-height: 1;
+}
+
+main #news .section-title .en {
+  display: block;
+  margin-left: 15px;
+  font-size: 0.875rem;
+}
+
+main #news .section-title .ja {
+  display: block;
+  font-size: 2.25rem;
+  letter-spacing: 0.1em;
+}
+
+main #news dl {
+  padding: 80px 100px 0 0;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+main #news dl dt {
+  padding: 15px 30px 15px 5px;
+  font-size: 0.75rem;
+  border-right: solid 1px #000;
+}
+
+main #news dl dd {
+  padding: 15px 0px 15px 30px;
+}
+
+main #news dl dd:last-child {
+  border-left: solid 1px #000;
+}
+
+main #product1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-bottom: 180px;
+}
+
+main #product1 .section-title {
+  margin-left: 20px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-weight: normal;
+  line-height: 1;
+}
+
+main #product1 .section-title .en {
+  margin-left: 15px;
+  font-size: 0.875rem;
+}
+
+main #product1 .section-title .ja {
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 18px;
+}
+
+main #product1 .img-container {
+  position: relative;
+  width: 65%;
+  margin-top: 100px;
+}
+
+main #product1 .img-container img {
+  width: 100%;
+}
+
+main #product1 .img-container p {
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
+  width: 56%;
+  padding: 50px 0;
+  text-align: center;
+  color: #ffffff;
+  background: rgba(249, 233, 6, 0.6);
+}
+
+main #product2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 180px;
+}
+
+main #product2 .section-title {
+  margin-right: 20px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  font-weight: normal;
+  line-height: 1;
+}
+
+main #product2 .section-title .en {
+  margin-left: 15px;
+  font-size: 0.875rem;
+}
+
+main #product2 .section-title .ja {
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 18px;
+}
+
+main #product2 .img-container {
+  position: relative;
+  width: 65%;
+  margin-top: 100px;
+}
+
+main #product2 .img-container img {
+  width: 100%;
+}
+
+main #product2 .img-container p {
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  width: 56%;
+  padding: 50px 0;
+  text-align: center;
+  color: #ffffff;
+  background: rgba(149, 42, 38, 0.6);
+}
+
+main .access {
+  max-width: 1024px;
+}
+
+main .access iframe {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+footer {
+  padding: 80px 80px 30px 30px;
+  background-color: #000;
+}
+
+footer .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.875rem;
+}
+
+footer .inner .left,
+footer .inner .right {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+footer .inner .left p a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer .inner .right .logo img {
+  margin-left: 60px;
+  width: 40px;
+}
+
+footer .inner .right p {
+  line-height: 2;
+}
+
+footer .inner .right p a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer p {
+  font-size: 0.675rem;
+  text-align: center;
+  color: #ffffff;
 }
 
 /* #endregion PC */
